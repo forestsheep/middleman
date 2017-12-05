@@ -2,14 +2,17 @@
 
 import web
 from api.testapi import TestApi
-from sdk.top import api
 
 urls = (
-    '/index', 'index',
+    '/index', 'Index',
     '/testapi', 'TestApi'
 )
 
-class index:
+
+class Index:
+    def __init__(self):
+        pass
+
     def GET(self):
         return "Hello, world!"
 
